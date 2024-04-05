@@ -113,7 +113,10 @@ class SignupView extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 ElevatedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed('/phone_login_view',
+                        parameters: {"0": "Sign Up"});
+                  },
                   icon: const Icon(Icons.phone),
                   label: const Text("Phone"),
                 ),

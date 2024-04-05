@@ -20,7 +20,7 @@ class LoginView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Welcome back!",
                   style: TextStyle(
                       fontSize: 50,
@@ -90,7 +90,9 @@ class LoginView extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 ElevatedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed('/phone_login_view');
+                  },
                   icon: const Icon(Icons.phone),
                   label: const Text("Phone"),
                 ),
