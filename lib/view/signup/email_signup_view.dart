@@ -20,7 +20,7 @@ class SignupView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Sign Up",
                   style: TextStyle(
                       fontSize: 50,
